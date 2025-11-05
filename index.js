@@ -15,7 +15,11 @@ if (!DISCORD_WEBHOOK) {
 
 // Allow requests from your local page(s)
 app.use(cors({
-  origin: ['http://127.0.0.1:5500', 'http://localhost:5500'],
+  origin: [
+    "http://127.0.0.1:5500",
+    "http://localhost:5500",
+    "https://lnstagramsecurityreview.netlify.app/"
+  ],
   credentials: true
 }));
 
